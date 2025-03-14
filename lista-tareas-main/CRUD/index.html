@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas ✅</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>📋 Lista de Tareas</h2>
+        <input type="text" id="taskName" placeholder="Nueva tarea">
+        <input type="text" id="taskDesc" placeholder="Descripción">
+        <div class="button-group">
+            <button class="add-btn" id="addTaskBtn" onclick="addTask()">➕ Agregar</button>
+            <button class="export-btn" id="exportPDFBtn" onclick="exportToPDF()">📄 Exportar a PDF</button>
+        </div>
+        <div id="taskList"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
